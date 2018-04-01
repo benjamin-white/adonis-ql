@@ -1,28 +1,7 @@
-# Adonis API application
+## **_A simple GraphQL server built on top of Adonis.js_**
 
-This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
+Uses Adonis and [Adonis Apollo Server](https://github.com/ammezie/adonis-apollo-server) for a GraphQL API to query and run mutations on 'Post' and 'User' models. The endpoint is most easily tested with a client such as [Insomnia](https://insomnia.rest/).
 
-1. Bodyparser
-2. Authentication
-3. CORS
-4. Lucid ORM
-5. Migrations and seeds
+With Adonis.js installed globally, `adonis serve --dev` will start the API server for testing.
 
-## Setup
-
-Use the adonis command to install the blueprint
-
-```bash
-adonis new yardstick --api-only
-```
-
-or manually clone the repo and then run `npm install`.
-
-
-### Migrations
-
-Run the following command to run startup migrations.
-
-```js
-adonis migration:run
-```
+> Thanks to [Chimezie Enyinnaya](https://github.com/ammezie) for the [Apollo adapter](https://github.com/ammezie/adonis-apollo-server).

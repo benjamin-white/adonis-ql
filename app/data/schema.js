@@ -20,9 +20,9 @@ const typeDefs = `
   }
   type Query {
     allUsers: [User]
+    user(id: Int!): User
     allPosts: [Post]
-    fetchUser(id: Int!): User
-    fetchPost(id: Int!): Post
+    post(id: Int!): Post
   }
   type Mutation {
     login(email: String!, password: String!): String
